@@ -1,0 +1,87 @@
+%----------------------------------------------------------------------------------------
+%	CLASS, PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	a4paper, % Paper size, use either a4paper or letterpaper
+	12pt, % Default font size, the template is designed to look good at 12pt so it's best not to change this
+	%unnumberedsections, % Uncomment for no section numbering
+]{CSSullivanBusinessReport}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,
+                chains,
+                positioning}
+\usepackage{colortbl}
+\usepackage{multirow}
+\addbibresource{references.bib} % BibLaTeX bibliography file
+\usepackage{caption}
+\usepackage{subcaption}
+
+%----------------------------------------------------------------------------------------
+%	REPORT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\reporttitle{CARE Lab Social Engineering Competition} % The report title to appear on the title page and page headers, do not create manual new lines here as this will carry over to page headers
+
+\reportsubtitle{Day Two Deliverables} % Report subtitle, include new lines if needed
+
+\reportauthors{Authors:\\\smallskip Liam Geyer (lfg5289@psu.edu)\\\smallskip Jenna Fox (jef5600@psu.edu)\\\smallskip Brendan McShane (bbm5360@psu.edu)\\\smallskip Jonathan Skeete (jxs7245@psu.edu)} % Report authors/group/department, include new lines if needed
+
+\reportdate{April 20, 2024} % Report date, include new lines for additional information if needed
+
+\rightheadercontent{\includegraphics[height=1.5cm]{assets/branding/ccso-shield.png}} % Header logo
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TEMPLATE PAGES
+%----------------------------------------------------------------------------------------
+
+\input{template/title-page.tex}
+\input{template/table-of-contents.tex}
+
+%----------------------------------------------------------------------------------------
+%	SECTIONS
+%----------------------------------------------------------------------------------------
+
+\input{day-2-sections/executive-summary}
+\input{day-2-sections/osint-findings}
+\input{day-2-sections/red-flags}
+\input{day-2-sections/ATT&CK-mappings}
+\input{day-2-sections/NIST-phish}
+\input{day-2-sections/identifying-scams-fraud}
+\input{day-2-sections/victim-checklist}
+\input{day-2-sections/gameplan}
+
+%----------------------------------------------------------------------------------------
+%	 REFERENCES/BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\newpage
+
+\addcontentsline{toc}{section}{References} % Add the bibliography to the table of contents
+
+\begin{twothirdswidth} % Content in this environment to be at two-thirds of the whole page width
+	\printbibliography[title=References] % Output the bibliography with a custom section title
+\end{twothirdswidth}
+
+%----------------------------------------------------------------------------------------
+%	APPENDICES
+%----------------------------------------------------------------------------------------
+
+\newpage
+
+\section*{Appendices}
+
+\begin{appendices}
+
+\input{appendecies/nist-phish-scale}
+\input{appendecies/mitre-attack-framework}
+
+\end{appendices}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

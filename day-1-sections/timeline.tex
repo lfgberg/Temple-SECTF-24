@@ -1,0 +1,62 @@
+\section{Timeline of Events} % Top level section
+
+\begin{fullwidth}
+\begin{tikzpicture}[
+node distance = 1mm and 3mm,
+  start chain = A going below,
+   dot/.style = {circle, draw=white, very thick, fill=gray,
+                 minimum size=3mm},
+   box/.style = {rectangle, text width=120mm,
+                 inner xsep=4mm, inner ysep=1mm,
+                 font=\sffamily\large\linespread{0.84}\selectfont,
+                 on chain},
+                        ]
+    \begin{scope}[every node/.append style={box}]
+    \node { HealthComp founded} ;
+    \node { HealthComp.com domain registered} ;
+    \node { HealthComp.live domain registered\\
+    \hyperref[sec:MITRE Attack Framework]{\textcolor{gray}{ATT\&CK Framework Mapping: Resource Development (Acquire Infrastructure)}}} ;
+    \node { User reports HealthComp job scam to the BBB matching the communication methods and contacts that Sam received} ;
+    \node { Sam posted her resume on a job-seeking site\\
+    \hyperref[sec:MITRE Attack Framework]{\textcolor{gray}{ATT\&CK Framework Mapping: Reconnaissance (Search Open Websites \& Domains)}}} ;
+    \node { Sam contacted by Kellie McDaniel with an interview offer\\
+    \hyperref[sec:MITRE Attack Framework]{\textcolor{gray}{ATT\&CK Framework Mapping: Initial Access (Phishing)}}} ;
+    \node { Sam's scheduled interview} ;
+    \end{scope}
+\draw[very thick, gray, {Triangle[length=10pt)]}-{Triangle[length=10pt]}, % arrow size  
+      shorten <=-5.5mm, shorten >=-6mm] % length of arrows
+    (A-1.north west) -- (A-7.south west); % number of nodes in timeline
+\foreach \i [ count=\j] in {Dec 1994, July 19th 2001, Nov 13th 2023, Nov 14th 2023, $\sim$April 15th-18th 2024, $\sim$April 17th-18th 2024, April 20th 2024}
+    \node[dot,label=left:\i] at (A-\j.west) {};
+    \end{tikzpicture}
+\subsection{Persuasive Techniques}
+
+\begin{enumerate}
+    \item \textbf{Recognizance of Achievements}
+            \\\medskip
+                The email received by Sam begins with HR stating they found her background and qualifications impressive. Beginning with flattery may be an attempt to lower the guard of the recipient, and is usually followed by promises that seem too good to be true.
+    \item \textbf{Too Good to be True}
+        \\\medskip
+                The advertised pay rate is generalized at \$38.11/hr for all six roles which is uncommon since each role would require a different skill set and therefore the salary for each position should be different. The generalization of such a high pay rate is likely a lure so applicants are inclined to follow up with the job offer.
+        \\\medskip
+                The email sent to Sam offers a work from home opportunity as well as a part-time, flexible schedule; However, all remote positions listed on Personify Health's LinkedIn and internal job board are for full-time employees.
+    \item \textbf{Authority}
+        \\\medskip
+                Sam's point of contact for the interview is Mr. David W. Bondeson, and although not stated in the email, a google search shows that he's the Director of Stop Loss Sales at Personify Health. Scheduling an interview with an executive at such a high level may make potential employees feel special and reassured about the legitimacy of the opportunity.
+    \item \textbf{Masquerade}
+        \\\medskip
+                Posing as a legitimate company builds trust between the employer and interviewee. If the job offer was sent from a company with little to no online presence, potential victims would be more wary in continuing contact with Human Resources.
+\end{enumerate}
+
+\subsection{MITRE ATT\&CK Framework Mappings}
+
+\begin{enumerate}
+    \item \textbf{Resource Development: Acquire Infrastructure T1583}
+            \\\medskip On Nov 13, 2023 the healthcomp.live domain is registered for use in later scams and phishing campaigns. This maps closely with the first \hyperref[sec:BBB Scam Report]{reported HealthComp scam} which was reported the next day.
+    \item \textbf{Reconnaissance: Search Open Websites \& Domains T1593}
+            \\\medskip Sam posted her resume to a public job-seeking site somewhere between April 15th-18th 2024. She was contacted shortly offer with the interview offer from Kellie McDaniel. The scam perpetrators likely utilized open source intelligence techniques to find her job site posting and identify her as a target for their scam.
+    \item \textbf{Initial Access: Phishing T1566}
+            \\\medskip On either April 17 or 18, 2024 Sam was sent what the team believes to be a phishing email, specifically a job scam. This serves as the point of initial access for future exploitation of the target.
+\end{enumerate}
+
+\end{fullwidth}

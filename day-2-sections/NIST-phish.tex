@@ -1,0 +1,388 @@
+\begin{fullwidth}
+\section{NIST Phish Scale} % Top level section
+
+The \hyperref[sec:NIST Phish Scale]{NIST Phish Scale} is a tool developed by NIST to assist with the identification of Phishing scams \autocite{Dawkins:2023}. The team has applied the \hyperref[sec:NIST Phish Scale]{NIST Phish Scale} worksheet to Sam's initial employment email to help determine its legitimacy.
+
+\subsection{Interview Offer Email}
+
+\begin{figure*}[H] % Use the figure* environment for full width figures
+    \centering
+    \includegraphics[scale=.5]{assets/full-interview-email-1.png}
+    \includegraphics[scale=.5]{assets/full-interview-email-2.png}
+    \captionsetup{justification=centering}
+    \caption{Sam's invitation to interview with "HealthComp"}
+\end{figure*}
+
+\subsubsection{Email Cues} % Second level section
+
+\textbf{Part 1: Answer “yes” or “no” to the following questions}\\\medskip
+\textit{Technical Indicators}
+    \begin{description}
+        \item[Q:] Is the sender’s name unrelated to the sender’s email address, including “reply-to” address?
+        \item[A:] \textbf{Yes} - The email is sent from Kellie McDaniel, who is not referenced at all throughout the interview and hiring process.
+        \item[Q:] Is a domain name used in the sender's email address plausibly similar to a
+recognizable entity's domain?
+        \item[A:] \textbf{Yes} - Although we don't have Kellie McDaniel's email address, the email later references davidbbondeson@healthcomp.live, which is similar to the real healthcomp.com domain.
+    \end{description}
+
+\textit{Visual Presentation Indicators}
+\begin{description}
+    \item[Q:] Are appropriate branding elements (text or logos) missing?
+    \item[A:] \textbf{Yes} - The email does not contain any logos or branding other than the use of the HealthComp name.
+    \item[Q:] Do the design and formatting of the email appear unprofessional?
+    \item[A:] \textbf{Yes} - The email doesn't utilize professional formatting, it has a number of grammatical errors and is not in line with what's expected from a typical employer.
+\end{description}
+
+\textit{Language and Content}
+\begin{description}
+    \item[Q:] Is the email missing a generic greeting, such as a formal or informal
+salutation?
+    \item[A:] \textbf{No} - The email begins with "Dear Candidate", and ends with "Best regards"
+    \item[Q:] Is the email missing personalization?
+    \item[A:] \textbf{Yes} -  The email is addressed to "Candidate", and doesn't refer to Sam by name at all.
+    \item[Q:] Is the message missing detail about the sender, such as sender or contact
+information?
+    \item[A:] \textbf{Yes} - The email does not mention the sender at all, it's signed from "HealthComp" and doesn't reference Kellie McDaniel.
+\end{description}
+
+\textit{Common Tactics}
+\begin{description}
+    \item[Q:] Does the message appear to be a work or business-related process?
+    \item[A:] \textbf{Yes} - The message appears to be related to an interview offer at HealthComp.
+    \item[Q:] Does the message appear to be from a friend, colleague, boss, other authority
+entity, or other reputable authority entity?
+    \item[A:] \textbf{No} - No real information is provided about the sender of the email, Kellie McDaniel, and it's generically signed "HealthComp".
+\end{description}
+
+Total number of "yes" responses: \textbf{7}
+
+\textbf{Part 2: Tally the total number of times the following appear in the email}
+
+\textit{Errors}
+\begin{itemize}
+    \item How many spelling errors are in the email? \textbf{1}
+    \item How many grammar errors are in the email, including mismatched plurality? \textbf{16}
+    \item How many inconsistencies are in the email? \textbf{3}
+\end{itemize}
+
+\textit{Technical Indicators}
+\begin{itemize}
+    \item How many potentially dangerous attachments are included? \textbf{0}
+    \item How many times does text hide the true URL in a hyperlink? \textbf{0}
+    \item How many links have a domain name plausibly similar to a to a recognizable
+entity's domain? \textbf{1}
+\end{itemize}
+
+\textit{Visual Presentation Indicators}
+\begin{itemize}
+    \item How many branding elements (text or logos) appear to be an imitation? \textbf{0}
+    \item How many branding elements (text or logos) appear to be out-of-date? \textbf{0}
+    \item How many inappropriate security indicators or security icons are in the
+email? \textbf{2}
+\end{itemize}
+
+\textit{Language and Content}
+\begin{itemize}
+    \item How many times is legal language used in the message, such as copyright
+information, disclaimers, or tax information? \textbf{0}
+    \item How many detailed aspects that are not central to the content are in the
+message? \textbf{2}
+    \item How many requests for sensitive information are in the email, including
+personally identifying information or credentials? \textbf{0}
+    \item How many times does the email express time pressure, including implied? \textbf{0}
+    \item How many threats are included in the message, including implied threats? \textbf{0}
+\end{itemize}
+
+\textit{Common Tactics}
+\begin{itemize}
+    \item How many appeals does the email make to help others? \textbf{0}
+    \item How many times does the email offer something that is too good to be true,
+such as having won a contest, lottery, free vacation and so on? \textbf{1}
+    \item Does the email offer anything personalized and unexpected just for you? \textbf{Yes (1)}
+    \item How many times does the email offer something for a limited time? \textbf{0}
+\end{itemize}
+
+Sum of tallied cues: \textbf{27}\\\medskip
+Total cue count from Part 1 and Part 2: \textbf{34}
+
+\begin{table*}[H]
+\centering
+\begin{tabular}{|l|c|}
+\hline
+\rowcolor[HTML]{96BEE6} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{96BEE6}\textbf{Total Cue Count}} & \textbf{Cue Category} \\ \hline
+1 – 8 cues                                                             & Few (more difficult)  \\ \hline
+9 – 14 cues                                                            & Some                  \\ \hline
+15 or more cues                                                        & Many (less difficult) \\ \hline
+\end{tabular}
+\captionsetup{justification=centering}
+\caption{Cue Category Mapping}
+\end{table*}
+
+Cue Category: \textbf{Many (less difficult)}
+
+\subsubsection{Premise Alignment} % Second level section
+
+\begin{itemize}
+    \item How applicable is the email to workplace processes or practices for the target
+audience? \textbf{6}
+    \item How pertinent is the email’s premise to the roles and responsibilities of the
+target audience? \textbf{0}
+    \item How well does the email align to other situations or events, even those external
+to the workplace? \textbf{6}
+    \item How applicable is the email to concerns over potentially harmful ramifications
+for not clicking the links or attachments? \textbf{0}
+    \item How applicable is the email’s reflection of targeted training effects that would
+lead to premise detection? Care must be taken to appropriately incorporate the
+training or warning specificity, as transfer of learning is quite difficult. \textbf{8}
+\end{itemize}
+
+\begin{table*}[H]
+\centering
+\begin{tabular}{|l|c|}
+\hline
+\rowcolor[HTML]{96BEE6} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{96BEE6}\textbf{Applicability Scale}} & \textbf{Applicability Score} \\ \hline
+Extreme applicability, alignment, or relevancy                    & 8                   \\ \hline
+Significant applicability, alignment, or relevancy                & 6                   \\ \hline
+Moderate applicability, alignment, or relevancy                   & 4                   \\ \hline
+Low applicability, alignment, or relevancy                        & 2                   \\ \hline
+Not applicable, no alignment, or no relevancy                     & 0                   \\ \hline
+\end{tabular}
+\captionsetup{justification=centering}
+\caption{Applicability Scale}
+\end{table*}
+
+Premise Alignment Rating: \textbf{4}
+
+\begin{table*}[H]
+\centering
+\begin{tabular}{|l|c|}
+\hline
+\rowcolor[HTML]{96BEE6} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{96BEE6}\textbf{Premise Alignment Rating}} & \textbf{Premise Alignment Category} \\ \hline
+10 and below                                                                    & Weak                                \\ \hline
+11 – 17                                                                         & Medium                              \\ \hline
+18 and higher                                                                   & Strong                              \\ \hline
+\end{tabular}
+\captionsetup{justification=centering}
+\caption{Premise Alignment Category Mapping}
+\end{table*}
+
+Premise Alignment Category: \textbf{Weak}
+
+\subsubsection{Detection Difficulty} % Second level section
+
+\begin{table*}[H]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\rowcolor[HTML]{96BEE6} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{96BEE6}\textbf{Cues Category}} & \multicolumn{1}{c|}{\cellcolor[HTML]{96BEE6}\textbf{Premise Alignment Category}} & \textbf{Detection Difficulty} \\ \hline
+                                                                     & Strong                                                                           & Very difficult                \\ \cline{2-3} 
+                                                                     & Medium                                                                           & Very difficult                \\ \cline{2-3} 
+\multirow{-3}{*}{Few (more difficult)}                               & Weak                                                                             & Moderately difficult          \\ \hline
+                                                                     & Strong                                                                           & Very difficult                \\ \cline{2-3} 
+                                                                     & Medium                                                                           & Moderately difficult          \\ \cline{2-3} 
+\multirow{-3}{*}{Some}                                               & Weak                                                                             & Moderately to Least difficult \\ \hline
+                                                                     & Strong                                                                           & Moderately difficult          \\ \cline{2-3} 
+                                                                     & Medium                                                                           & Moderately difficult          \\ \cline{2-3} 
+\multirow{-3}{*}{Many (less difficult)}                              & Weak                                                                             & Least difficult               \\ \hline
+\end{tabular}
+\captionsetup{justification=centering}
+\caption{Detection Difficulty Mapping}
+\end{table*}
+
+Overall Detection Difficulty Rating: \textbf{Least difficult}
+
+\subsection{Job Offer Email}
+
+\begin{figure*}[H] % Use the figure* environment for full width figures
+    \centering
+    \includegraphics{assets/OfferEmail.png}
+    \captionsetup{justification=centering}
+    \caption{Sam's job offer email}
+\end{figure*}
+
+\subsubsection{Email Cues} % Second level section
+
+\textbf{Part 1: Answer “yes” or “no” to the following questions}\\\medskip
+\textit{Technical Indicators}
+    \begin{description}
+        \item[Q:] Is the sender’s name unrelated to the sender’s email address, including “reply-to” address?
+        \item[A:] \textbf{Yes} - The email is sent from David Bondeson, although this was the initial point of contact for the interview, the individual conducting the text based interview was Gavin Manley.
+        \item[Q:] Is a domain name used in the sender's email address plausibly similar to a
+recognizable entity's domain?
+        \item[A:] \textbf{Yes} - davidbbondeson@healthcomp.live, is similar to the real healthcomp.com domain.
+    \end{description}
+
+\textit{Visual Presentation Indicators}
+\begin{description}
+    \item[Q:] Are appropriate branding elements (text or logos) missing?
+    \item[A:] \textbf{Yes} - The email does not contain any logos or branding other than the use of the HealthComp name.
+    \item[Q:] Do the design and formatting of the email appear unprofessional?
+    \item[A:] \textbf{Yes} - The email doesn't utilize professional formatting, it has a number of grammatical errors and is not in line with what's expected from a typical employer.
+\end{description}
+
+\textit{Language and Content}
+\begin{description}
+    \item[Q:] Is the email missing a generic greeting, such as a formal or informal
+salutation?
+    \item[A:] \textbf{No} - The email begins with "Hello Sam Gamgee", and ends with "Best regards"
+    \item[Q:] Is the email missing personalization?
+    \item[A:] \textbf{No} -  The email is addressed to Sam specifically.
+    \item[Q:] Is the message missing detail about the sender, such as sender or contact
+information?
+    \item[A:] \textbf{Yes} - No contact information or sender name is indicated in the email.
+\end{description}
+
+\textit{Common Tactics}
+\begin{description}
+    \item[Q:] Does the message appear to be a work or business-related process?
+    \item[A:] \textbf{Yes} - The message appears to be related to a job offer at HealthComp.
+    \item[Q:] Does the message appear to be from a friend, colleague, boss, other authority
+entity, or other reputable authority entity?
+    \item[A:] \textbf{Yes} - The message appears to be from the "Employee Success Director" at HealthComp.
+\end{description}
+
+Total number of "yes" responses: \textbf{7}
+
+\textbf{Part 2: Tally the total number of times the following appear in the email}
+
+\textit{Errors}
+\begin{itemize}
+    \item How many spelling errors are in the email? \textbf{0}
+    \item How many grammar errors are in the email, including mismatched plurality? \textbf{9}
+    \item How many inconsistencies are in the email? \textbf{3}
+\end{itemize}
+
+\textit{Technical Indicators}
+\begin{itemize}
+    \item How many potentially dangerous attachments are included? \textbf{2}
+    \item How many times does text hide the true URL in a hyperlink? \textbf{0}
+    \item How many links have a domain name plausibly similar to a to a recognizable
+entity's domain? \textbf{0}
+\end{itemize}
+
+\textit{Visual Presentation Indicators}
+\begin{itemize}
+    \item How many branding elements (text or logos) appear to be an imitation? \textbf{0}
+    \item How many branding elements (text or logos) appear to be out-of-date? \textbf{0}
+    \item How many inappropriate security indicators or security icons are in the
+email? \textbf{0}
+\end{itemize}
+
+\textit{Language and Content}
+\begin{itemize}
+    \item How many times is legal language used in the message, such as copyright
+information, disclaimers, or tax information? \textbf{0}
+    \item How many detailed aspects that are not central to the content are in the
+message? \textbf{0}
+    \item How many requests for sensitive information are in the email, including
+personally identifying information or credentials? \textbf{2}
+    \item How many times does the email express time pressure, including implied? \textbf{0}
+    \item How many threats are included in the message, including implied threats? \textbf{0}
+\end{itemize}
+
+\textit{Common Tactics}
+\begin{itemize}
+    \item How many appeals does the email make to help others? \textbf{0}
+    \item How many times does the email offer something that is too good to be true,
+such as having won a contest, lottery, free vacation and so on? \textbf{1}
+    \item Does the email offer anything personalized and unexpected just for you? \textbf{Yes (1)}
+    \item How many times does the email offer something for a limited time? \textbf{0}
+\end{itemize}
+
+Sum of tallied cues: \textbf{18}\\\medskip
+Total cue count from Part 1 and Part 2: \textbf{25}
+
+\begin{table*}[H]
+\centering
+\begin{tabular}{|l|c|}
+\hline
+\rowcolor[HTML]{96BEE6} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{96BEE6}\textbf{Total Cue Count}} & \textbf{Cue Category} \\ \hline
+1 – 8 cues                                                             & Few (more difficult)  \\ \hline
+9 – 14 cues                                                            & Some                  \\ \hline
+15 or more cues                                                        & Many (less difficult) \\ \hline
+\end{tabular}
+\captionsetup{justification=centering}
+\caption{Cue Category Mapping}
+\end{table*}
+
+Cue Category: \textbf{Many (less difficult)}
+
+\subsubsection{Premise Alignment} % Second level section
+
+\begin{itemize}
+    \item How applicable is the email to workplace processes or practices for the target
+audience? \textbf{8}
+    \item How pertinent is the email’s premise to the roles and responsibilities of the
+target audience? \textbf{8}
+    \item How well does the email align to other situations or events, even those external
+to the workplace? \textbf{6}
+    \item How applicable is the email to concerns over potentially harmful ramifications
+for not clicking the links or attachments? \textbf{4}
+    \item How applicable is the email’s reflection of targeted training effects that would
+lead to premise detection? Care must be taken to appropriately incorporate the
+training or warning specificity, as transfer of learning is quite difficult. \textbf{6}
+\end{itemize}
+
+\begin{table*}[H]
+\centering
+\begin{tabular}{|l|c|}
+\hline
+\rowcolor[HTML]{96BEE6} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{96BEE6}\textbf{Applicability Scale}} & \textbf{Applicability Score} \\ \hline
+Extreme applicability, alignment, or relevancy                    & 8                   \\ \hline
+Significant applicability, alignment, or relevancy                & 6                   \\ \hline
+Moderate applicability, alignment, or relevancy                   & 4                   \\ \hline
+Low applicability, alignment, or relevancy                        & 2                   \\ \hline
+Not applicable, no alignment, or no relevancy                     & 0                   \\ \hline
+\end{tabular}
+\captionsetup{justification=centering}
+\caption{Applicability Scale}
+\end{table*}
+
+Premise Alignment Rating: \textbf{20}
+
+\begin{table*}[H]
+\centering
+\begin{tabular}{|l|c|}
+\hline
+\rowcolor[HTML]{96BEE6} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{96BEE6}\textbf{Premise Alignment Rating}} & \textbf{Premise Alignment Category} \\ \hline
+10 and below                                                                    & Weak                                \\ \hline
+11 – 17                                                                         & Medium                              \\ \hline
+18 and higher                                                                   & Strong                              \\ \hline
+\end{tabular}
+\captionsetup{justification=centering}
+\caption{Premise Alignment Category Mapping}
+\end{table*}
+
+Premise Alignment Category: \textbf{Strong}
+
+\subsubsection{Detection Difficulty} % Second level section
+
+\begin{table*}[H]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\rowcolor[HTML]{96BEE6} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{96BEE6}\textbf{Cues Category}} & \multicolumn{1}{c|}{\cellcolor[HTML]{96BEE6}\textbf{Premise Alignment Category}} & \textbf{Detection Difficulty} \\ \hline
+                                                                     & Strong                                                                           & Very difficult                \\ \cline{2-3} 
+                                                                     & Medium                                                                           & Very difficult                \\ \cline{2-3} 
+\multirow{-3}{*}{Few (more difficult)}                               & Weak                                                                             & Moderately difficult          \\ \hline
+                                                                     & Strong                                                                           & Very difficult                \\ \cline{2-3} 
+                                                                     & Medium                                                                           & Moderately difficult          \\ \cline{2-3} 
+\multirow{-3}{*}{Some}                                               & Weak                                                                             & Moderately to Least difficult \\ \hline
+                                                                     & Strong                                                                           & Moderately difficult          \\ \cline{2-3} 
+                                                                     & Medium                                                                           & Moderately difficult          \\ \cline{2-3} 
+\multirow{-3}{*}{Many (less difficult)}                              & Weak                                                                             & Least difficult               \\ \hline
+\end{tabular}
+\captionsetup{justification=centering}
+\caption{Detection Difficulty Mapping}
+\end{table*}
+
+Overall Detection Difficulty Rating: \textbf{Moderately difficult}
+\end{fullwidth}

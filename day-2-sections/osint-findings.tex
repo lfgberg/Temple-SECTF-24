@@ -1,0 +1,103 @@
+\begin{fullwidth}
+\section{OSINT Findings} % Top level section
+\subsection{BBB Scam Report}
+
+The team found a report submitted to the Better Business Bureau which fits the exact description of Sam's interactions with the prospective employer.
+
+\begin{quote}
+	\textbf{\LARGE ``}I was sent an email about a potential job offer for HealthComp I then got instructions to conduct an interview on Microsoft Team then they so called hired me and had me fill out paper work including a W4 form that had my ssn number then after that I told them I had finished filling out the paper work and then they started asking if I was going to be using a credit card to accept my payments and I said no then they said I need one so they can process faster then that's when I realized it was a scam\textbf{''}
+	
+	\hfill--- BBB Scam ID \#772647 \autocite{BBB:2023}
+\end{quote}
+
+The BBB Scam Report lists the same davidbondeson@healthcomp.live email address referenced in Sam's interview offer. With this in mind, it's extremely likely that Sam's job opportunity is not legitimate.
+
+\subsection{Employer Information}
+    \begin{itemize}
+        \item HealthComp signed a merger with Virgin Pulse to create Personify Health. Omnicell is not affiliated with HealthComp or Personify Health whatsoever.
+    \\\medskip
+        \item All positions offered to Sam are not posted on Personify Health's or Omnicell's internal job board \hyperref[sec:Fig1]{(See Figure 1)}.
+    \\\medskip
+    \end{itemize}
+
+\subsection{Interviewer Information}
+    \begin{itemize}
+        \item As of Nov. 2023, Mr. Manley has left Omnicell, Inc. He is now employed as a Senior Enterprise Account Executive at Docusign, Inc. \hyperref[sec:Fig2]{(See Figure 2)}.
+    \\\medskip
+        \item Mr. Manley's LinkedIn profile indicates that he received a Bachelor of Science in Business Administration from the University of Central Florida \hyperref[sec:Fig3]{(See Figure 3)}.
+    \\\medskip        
+        \item During his time at Omnicell, Mr. Manley was a Medical Account Executive.
+    \\\medskip        
+        \item David W. Bondeson is not an Interview Manager but the Director of Stop Loss Sales \hyperref[sec:Fig4]{(See Figure 4)}.
+    
+    \end{itemize}
+
+\subsection{Domain Information}
+    \begin{itemize}
+        \item Mr. David W. Bondeson should uses a healthcomp.com domain instead of healthcomp.live \hyperref[sec:Fig5]{(See Figure 5)}.
+        \item The healtcomp.live domain was registered in 2023, whereas the healthcomp.com domain was registered in 2001 \hyperref[sec:Fig6]{(See Figure 6)}.
+    \end{itemize}
+
+\subsection{OSINT Evidence}
+    \begin{figure*}[H] % Use the figure* environment for full width figures
+        \label{sec:Fig1}
+        \centering
+        \includegraphics[width=.9\linewidth]{assets/realJobPosting.png}
+        \captionsetup{justification=centering}
+        \caption{The job listings for Healthcomp do not have the offered position of content writer available.}
+    \end{figure*}
+    
+    \begin{figure*}[H] % Use the figure* environment for full width figures
+        \label{sec:Fig2}
+        \centering
+        \includegraphics[width=.9\linewidth]{assets/ManleyLinkedin2.png}
+        \captionsetup{justification=centering}
+        \caption{Gavin Manley's LinkedIn profile showing his employment at Omnicell, Inc ended in November 2023 due to his transition to DocuSign as a Senior Enterprise Account Executive.}
+    \end{figure*}
+
+    \begin{figure*}[H] % Use the figure* environment for full width figures
+        \label{sec:Fig3}
+        \centering
+        \includegraphics[width=.9\linewidth]{assets/ManleyCollege.png}
+        \captionsetup{justification=centering}
+        \caption{Gavin Manley's LinkedIn profile showing he graduated from the University of Central Florida.}
+    \end{figure*}
+
+    \begin{figure*}[H] % Use the figure* environment for full width figures
+        \label{sec:Fig4}
+        \centering
+        \includegraphics[width=.9\linewidth]{assets/BondesonLinkedinHeader.png}
+        \captionsetup{justification=centering}
+        \caption{David W. Bondeson is listed as Director of Stop Loss Sales at Personify Health.}
+    \end{figure*}
+
+    \begin{figure*}[H] % Use the figure* environment for full width figures
+        \label{sec:Fig5}
+        \centering
+        \includegraphics[width=.9\linewidth]{assets/bondeson-email.png}
+        \captionsetup{justification=centering}
+        \caption{David W. Bondeson's contact information on LinkedIn.}
+    \end{figure*}
+
+    \begin{figure*}[H] % Use the figure* environment for full width figures
+        \label{sec:Fig6}
+        \centering
+        \begin{subfigure}{0.5\textwidth}
+            \centering
+            \includegraphics[width=1.37\linewidth]{assets/ICANN Lookup.png}
+            \captionsetup{justification=centering}
+            \caption{healthcomp.com Domain Registration (2001)}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}{0.5\textwidth}
+            \centering
+            \includegraphics[width=1.37\linewidth]{assets/ICANN Lookup2.png}
+            \captionsetup{justification=centering}
+            \caption{healthcomp.live Domain Registration (2023)}
+        \end{subfigure}
+        \hfill
+        \captionsetup{justification=centering}
+        \caption{Two different domains for the same company}
+    \end{figure*}
+
+\end{fullwidth}

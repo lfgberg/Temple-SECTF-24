@@ -1,0 +1,56 @@
+\begin{fullwidth}
+\section{Timeline \& ATT\&CK Mappings} % Top level section
+
+\subsection{Timeline}
+\begin{tikzpicture}[
+node distance = 1mm and 3mm,
+  start chain = A going below,
+   dot/.style = {circle, draw=white, very thick, fill=gray,
+                 minimum size=3mm},
+   box/.style = {rectangle, text width=120mm,
+                 inner xsep=4mm, inner ysep=1mm,
+                 font=\sffamily\large\linespread{0.84}\selectfont,
+                 on chain},
+                        ]
+    \begin{scope}[every node/.append style={box}]
+    \node { HealthComp founded} ;
+    \node { HealthComp.com domain registered} ;
+    \node { HealthComp.live domain registered\\
+    \hyperref[sec:MITRE Attack Framework]{\textcolor{gray}{ATT\&CK Framework Mapping: Resource Development (Acquire Infrastructure)}}} ;
+    \node { User reports HealthComp job scam to the BBB matching the communication methods and contacts that Sam received} ;
+    \node { Sam posted her resume on a job-seeking site\\
+    \hyperref[sec:MITRE Attack Framework]{\textcolor{gray}{ATT\&CK Framework Mapping: Reconnaissance (Search Open Websites \& Domains)}}} ;
+    \node { Sam contacted by Kellie McDaniel with an interview offer\\
+    \hyperref[sec:MITRE Attack Framework]{\textcolor{gray}{ATT\&CK Framework Mapping: Initial Access (Phishing)}}} ;
+    \node { Sam's job interview\\
+    \hyperref[sec:MITRE Attack Framework]{\textcolor{gray}{ATT\&CK Framework Mapping: Initial Access (Trusted Relationship)}}} ;
+    \node{ Sam receives a job offer asking for financial and informational forms\\
+    \hyperref[sec:MITRE Attack Framework]{\textcolor{gray}{ATT\&CK Framework Mapping: Exfiltration (Exfiltration Over Web Service)}}} ;
+    \node { Deadline to purchase home office materials, scheduled orientation and training call\\
+    \hyperref[sec:MITRE Attack Framework]{\textcolor{gray}{ATT\&CK Framework Mapping: Impact (Financial Theft)}}} ;
+    \end{scope}
+\draw[very thick, gray, {Triangle[length=10pt)]}-{Triangle[length=10pt]}, % arrow size  
+      shorten <=-6mm, shorten >=-2mm] % length of arrows
+    (A-1.north west) -- (A-9.south west); % number of nodes in timeline
+\foreach \i [ count=\j] in {Dec 1994, July 19th 2001, Nov 13th 2023, Nov 14th 2023, $\sim$April 15th-18th 2024, $\sim$April 17th-18th 2024, April 20th 2024, April 20th 2024, 8am EST April 22nd 2024}
+    \node[dot,label=left:\i] at (A-\j.west) {};
+    \end{tikzpicture}
+
+\subsection{MITRE ATT\&CK Framework Mappings}
+
+\begin{enumerate}
+    \item \textbf{Resource Development: Acquire Infrastructure T1583}
+        \\\medskip On Nov 13, 2023 the healthcomp.live domain is registered for use in later scams and phishing campaigns. This maps closely with the first reported HealthComp scam which was reported the next day.
+    \item \textbf{Reconnaissance: Search Open Websites \& Domains T1593}
+        \\\medskip Sam posted her resume to a public job-seeking site somewhere between April 15-18, 2024. She was contacted shortly offer with the interview offer from Kellie McDaniel. The scam perpetrators likely utilized open source intelligence techniques to find her job site posting and identify her as a target for their scam.
+    \item \textbf{Initial Access: Phishing T1566}
+        \\\medskip On either April 17 or 18, 2024 Sam was sent what the team believes to be a phishing email, specifically a job scam. This serves as the point of initial access for future exploitation of the target.
+    \item \textbf{Initial Access: Trusted Relationship T1199}
+        \\\medskip On April 20, 2024 Sam completed a text interview with what the team believes to be a job scam posing as the company HealthComp, LLC. This interview built trust with Sam as she considered the interview to be a legitimate part of her job search. With this established trust, a potential job scam could exfiltrate personally identifiable or financial information from Sam.
+    \item \textbf{Exfiltration: Exfiltration Over Web Service T1567}
+        \\\medskip On April 20, 2024 Sam received a job offer following her interview. This job offer was sent over email and required her to fill out forms and provide both personally identifiable and financial information. Should Sam submit the forms and information, the job scammer will have successfully exfiltrated her data.
+    \item \textbf{Impact: Financial Theft T1657}
+        \\\medskip Should Sam accept the job offer, she must purchase office supplies from HealthComp's vendor by April 22, 2024 at 8:00am. If this is a job scam like the team suspects, the money Sam would send to the vendor would likely be sent to the scammer for a profit and not actual office supplies.
+\end{enumerate}
+
+\end{fullwidth}
