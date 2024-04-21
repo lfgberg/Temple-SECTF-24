@@ -1,5 +1,6 @@
-# Temple-SECTF-24
-LaTeX Code and deliverables for the 2024 Temple University Social Engineering Competition
+# Temple University Social Engineering Competition
+
+LaTeX Code and deliverables for the 2024 Temple University Social Engineering Competition, utilizing the [Sullivan Business Report LaTeX Template](https://www.latextemplates.com/template/sullivan-business-report)
 
 ## Authors
 
